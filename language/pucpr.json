@@ -1,0 +1,15 @@
+{
+  "mailPositive": "**Certo!** :grinning: \n\nAcabamos de te enviar um email :incoming_envelope: \n**(Confere a pasta de spam, tá?!)**\n\nAgora só preciso que me informe o **CÓDIGO** que recebeu por email:",
+  "mailNegative": "Não foi possível enviar email para %VAR%",
+  "roleAdded": "**Pronto, tudo certo!**\nSeja muito bem vindo! :smiling_face_with_3_hearts:\n\nOs canais foram liberados.\nLembre-se de seguir as regras e prezar pelo ambiente. :thumbsup: ",
+  "mailInvalid": "Tem algo errado! :face_with_raised_eyebrow:\n\n**Lembre-se:** emails pessoais ou outros emails não servem para confirmar sua matrícula.\n\n**Por favor, informe seu email institucional novamente:**",
+  "mailBlacklisted": "Seu email está na blacklist, entre em contato com um Administrador.",
+  "mailTimeout": "Por favor, espere %VAR% segundos antes de reenviar o email.",
+  "invalidPermissions": "Você não está autorizado a executar este comando!",
+  "commandFailed": "Ocorreu um erro ao executar este comando!",
+  "userRetry": "Ocorreu um erro. Por favor, remova e adicione a reação novamente.",
+  "userBotError": "Bot não configurado corretamente. Por favor, contate um Administrador.",
+  "userEnterEmail": "**Olá, estudante!** :grinning:\nVamos liberar seu acesso aos canais para tirar dúvidas e interagir com a Monitoria!\n\nVocê precisará do seu **email institucional**, exemplo**@pucpr.edu.br**\nPor favor, **me informe o seu email institucional:**",
+  "userCantFindRole": "Não foi possível encontrar as roles. Por favor, contate o administrador! Ajuda: Confirme que o nome continua igual, e que a role do bot é maior que a role de verificado e não verificado no menu de configuração do servidor.",
+  "emailText": "Bem vindo a %VAR%!\nAqui está seu código de acesso: %VAR%\n\nNão compartilhe este código com ninguém."
+}
