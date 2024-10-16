@@ -57,9 +57,18 @@ module.exports = async function (message, bot, userGuilds, userCodes, userTimeou
             })
             database.updateEmailUser(new EmailUser(userCode.email, message.author.id, userGuilds.get(message.author.id).id, serverSettings.verifiedRoleName, 0))
             let verify_client
+            console.log(text)
             try {
                 verify_client = userGuilds.get(message.author.id).members.cache.get(message.author.id)
                 await verify_client.roles.add(roleVerified);
+                let emailPrefix = userCode.logEmail.split('@')[0];
+                let filteredPrefix = emailPrefix.includes('.') ? emailPrefix.split('.')[0] : emailPrefix;
+                let formatedPrefix = filteredPrefix.charAt(0).toUpperCase() + filteredPrefix.slice(1).toLowerCase();
+
+
+                await verify_client.setNickname(formatedPrefix);
+
+                
 
             } catch (e) {
                 message.author.send(getLocale(serverSettings.language, "userCantFindRole")).catch(() => {
@@ -81,6 +90,7 @@ module.exports = async function (message, bot, userGuilds, userCodes, userTimeou
             }
             await message.reply(getLocale(serverSettings.language, "roleAdded", roleVerified.name))
             userCodes.delete(message.author.id + userGuilds.get(message.author.id).id)
+            console.log(text)
         } else {
             let validEmail = false
             for (const domain of serverSettings.domains) {
